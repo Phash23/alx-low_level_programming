@@ -2,22 +2,18 @@
 
 /**
  * print_line - Print straight line on the terminal
- * @c: Number of times the character '_' will be printed
- *    * Return: void
- *     */
+ * @n: Number of times the character '_' will be printed
+ * Return: void
+ */
 
-void more_numbers(void)
+void print_line(int n)
 {
-	        if (c <= 0)
-			                _putchar('\n');
-		        else
-				        {
-						                int i;
-
-								                for (i = 0 ; i <= c ; i++)
-											                        _putchar('_');
-										                _putchar('\n');
-												        }
+	if (n <= 0)
+		_putchar('\n');
+	else
+	{					                int i;
+		for (i = 0 ; i <= n ; i++)
+			_putchar('_');
+		_putchar('\n');
+	}
 }
-~                                                    
-
